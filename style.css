@@ -54,32 +54,6 @@ header nav .logo{
     margin-left: 5rem;
 }
 
-header nav .logo span{
-    font-size: 3.2rem;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-    color: #fff;
-    padding: .9rem;
-    border-radius: 0 0 5rem 0;
-    box-shadow: 8px 8px 8px rgb(16 16 16 / 10%), 
-                15px 15px 15px rgb(16 16 16 / 10%); 
-
-    text-shadow: 8px 8px 8px rgb(16 16 16 / 10%), 
-                 10px 10px 10px rgb(16 16 16 / 10%),
-                 8px 8px 8spx rgb(16 16 16 / 10%), 
-                 10px 10px 10px rgb(16 16 16 / 10%); 
-    animation: animeLogo 3s linear infinite;
-}
-
-@keyframes animeLogo {
-    0%,100%{
-        border-radius: 0 0 5rem 0;
-    }
-
-    50%{
-        border-radius: 5rem 0 0 0; 
-    }
-} 
-
 header nav .navList ul li{
     position: relative;
     display: inline; 
@@ -262,7 +236,18 @@ main .home .left_content .subscription .btn .ri{
     font-size: 2.5rem;
     color: #fff;
 } 
-  
+.logo_img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.footer_img{
+    width: 12Srem;
+    height: 12rem;
+    border-radius: 50%;
+}
+
 main .home .right_content img{ 
     width: 75%;
     height: 75%;
@@ -705,6 +690,19 @@ main .signup{
     border-radius: 0 0 5rem 0;
 }  
 
+main .signup::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -15rem;
+    width: 50%;
+    height: 70%;
+    background-size: contain; 
+    background-repeat: no-repeat;
+    transform: rotate(210deg);
+    z-index: -1;
+} 
+
 main .signup .section_content{ 
     width: max-content;
 }
@@ -754,6 +752,13 @@ footer .footer_content{
 
 footer .footer_content .brand{
     padding: 1.5rem;
+}
+
+.sub-tittle {
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
 }
 
 footer .footer_content .brand .logo{ 
