@@ -76,7 +76,7 @@ header nav .navList ul li a.active::before{
     margin: auto;
     width: 1rem;
     height: 1rem;
-    background: #ffff;
+    background: #919191;
     border-radius: 50%;
     box-shadow: 5px 5px 5px rgb(16 16 16 / 10%), 10px 10px 10px rgb(16 16 16 / 10%); 
 }  
